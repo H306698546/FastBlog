@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:fragment="nav">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            `   <a class="navbar-brand "style="width: 150px"  href="#">潇潇博客</a>
+                <a class="navbar-brand "style="width: 150px"  href="/">首页</a>
+                <a class="navbar-brand "style="width: 150px"  href="/">分类</a>
+                <a class="navbar-brand "style="width: 150px"  href="/">标签</a>
+                <a class="navbar-brand "style="width: 150px"  href="/">归档</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="搜索">
+                        </div>
+                        <button type="submit" class="btn btn-default">搜索</button>
+                    </form>
+                </ul>
+                    <!--<li th:if="${session.user != null}">-->
+                        <!--<a href="/publish">发布</a>-->
+                    <!--</li>-->
+                    <!--<li class="dropdown" th:if="${session.user != null}">-->
+                        <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人中心<span class="caret"></span></a>-->
+                        <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="/profile/questions">我的问题</a></li>-->
+                            <!--<li><a href="#">个人资料</a></li>-->
+                            <!--<li><a href="#">退出登录</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <!--<li th:if="${session.user == null}">-->
+                        <!--<a href="">登录</a></li>-->
+
+
+            </div>
+        </div>
+    </nav>
+</div>
+</body>
