@@ -11,6 +11,71 @@
 </head>
 <body>
     <div th:insert="~{navigation :: nav}"></div>
+    <div class="container-fluid main" style="background-color: white;margin: 30px;">
+        <div class="row">
+            <div class="col-lg-9  col-md-12 col-sm-12 col-xs-12" >
+                <h2><span class="glyphicon glyphicon-list" aria-hidden="true"></span>发现</h2>
+                <hr>
+                <div class="main-wrapper">
+                    <section class="blog-list px-3 py-5 p-md-5">
+                        <div class="container">
+                            <!--循环-->
+                            <div class="item mb-5">
+                                <div class="media">
+                                    <!--<img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="assets/images/blog/blog-post-thumb-1.jpg" alt="image">-->
+                                    <div class="media-body">
+                                        <h3 class="title mb-1"><a href="blog-post.html">标题</a></h3>
+                                        <div class="meta mb-1"><span class="date">发表时间·</span><span class="time">浏览次数·</span><span class="comment"><a href="#">评论数</a></span></div>
+                                        <div class="intro">文章缩略</div>
+                                        <a class="more-link" href="blog-post.html">阅读更多 &rarr;</a>
+                                    </div><!--//media-body-->
+                                </div><!--//media-->
+                            </div><!--//item-->
+
+                            <nav class="blog-nav nav nav-justified my-5">
+                                <a class="nav-link-prev nav-item nav-link d-none rounded-left" href="#">Previous<i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
+                                <a class="nav-link-next nav-item nav-link rounded" href="blog-list.html">Next<i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+                            </nav>
+
+                        </div>
+                    </section>
+
+                    <footer class="footer text-center py-2 theme-bg-dark">
+
+                        <small class="copyright">Designed with <i class="fas fa-heart"></i> by 3rdwavemedia for developers / More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></small>
+
+                    </footer>
+
+                </div><!--//main-wrapper-->
+
+            </div>
+
+            <div class="col-lg-3  col-md-12 col-sm-12 col-xs-12" >
+                    <div><div>
+                        <!--码问官方公众号-->
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 side">
+                            <h4>官方微信</h4>
+
+                        </div>
+                    </div></div>
+                    <!--相关问题-->
+                    <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h4>热门标签</h4>
+
+                    </div>
+                    <div><div>
+                        <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 side">
+                            <!--<a href="http://www.mawen.co/question/261" onclick="clickSide(&quot;UCloud&quot;)" target="_blank">-->
+                                <!--<img class="img-thumbnail question-wechat" src="http://mawen-cdn.cn-bj.ufileos.com/uhost.png">-->
+                            <!--</a>-->
+                        </div>
+
+                    </div></div>
+                </div>
+            </div>
+    </div>
 
 </body>
 </html>
